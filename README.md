@@ -1,2 +1,57 @@
 # fraud-transaction-classifier
+
+**Author** Aman Bhardwaj
+
+### Executive summary
+
+#### Rationale
+Fraudulent financial activities lead to significant financial losses for individuals, businesses, and organizations. As the volume and complexity of financial transaction data increases, manual detection of anomalies becomes impractical and insufficient. To address this problem, unusual patterns in financial transaction data (indication of fraudulent activity) can be detected by utilizing Machine Learning techniques at scale.
+
+Proactive identification of a financial transaction as fraudulent will help in timely mitigation of its impact. Businesses can proactively intercept fraudulent transactions before they cause harm. This means faster response, reduced losses, and stronger protection for both customers and enterprises.
+
+#### Research Question
 Is a given financial transaction fraudulent?
+
+#### Data Sources
+What data will you use to answer you question?
+
+#### Methodology
+<b>A. Data Understanding</b>
+1. Explore the data to understand volume, features, data types, limits, class imbalance etc.
+
+<b>B. Data Preparation</b>
+1. Handling of Missing Values
+2. Scaling Features
+3. Split Train and Test data
+4. Feature Engineering
+   - Feature selection using Statistical Data Analysis
+   - Converting categorical features into numerical representations using <b>One-Hot Encoding (OHE)</b>
+   - Dimensionality reduction using <b>Principal Component Analysis (PCA)</b>
+
+<b>C. Modeling & Evaluation</b>
+1. <b>Classification</b> – Supervised learning using labeled historical data
+    - <b>Logistic Regression</b> with <b>Stratified K-Fold</b> cross-validation and <b>SMOTE</b> within the cross-validation loop (to handle highly imbalanced data)
+    - <b>Random Forest</b> with <b>Stratified K-Fold</b> cross-validation and <b>SMOTE</b> within the cross-validation loop (to handle highly imbalanced data)
+2. <b>Anomaly Detection</b> – Unsupervised learning using same historical data without the label
+   - <b>Isolation Forest</b> with <b>Stratified K-Fold</b> cross-validation and <b>SMOTE</b> within the cross-validation loop (to handle highly imbalanced data)
+3. <b>Evaluation</b>
+    - <b>Precision</b>, <b>Recall</b>, <b>F1-Score</b> <i>(Accuracy may be misleading with highly imbalanced data)</i>
+    - <b>Confusion Matrix</b>
+4. <b>Additional Research</b>
+    - <b>Clustering</b> – Unsupervised learning using same historical data without the label
+      - <b>DBSCAN</b> – Explore how clustering performs in identifying outliers / anomalies 
+
+#### Results
+What did your research find?
+
+#### Next steps
+What suggestions do you have for next steps?
+
+#### Outline of project
+
+- [Link to notebook 1](EDA)
+- [Link to notebook 2]()
+- [Link to notebook 3]()
+
+
+##### Contact and Further Information
