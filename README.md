@@ -48,9 +48,9 @@ What suggestions do you have for next steps?
 
 #### Outline of project
 
-- [Link to notebook 1](EDA)
-- [Link to notebook 2]()
-- [Link to notebook 3]()
+- [notebook - baseline model (logistic regression)](https://github.com/amanbhardwaj/fraud-transaction-classifier/blob/main/base-classifier.ipynb)
+- [notebook - camparison model (random forest)]()
+- [notebook - anomaly detection model (Isolation forest)]()
 
 
 ##### Contact and Further Information
