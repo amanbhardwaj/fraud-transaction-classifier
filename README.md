@@ -29,7 +29,7 @@ The dataset comes from the [Kaggle dataset repository](https://www.kaggle.com/da
 
 <b>C. Modeling & Evaluation</b>
 1. <b>Classification</b> – Supervised learning using labeled historical data
-    - <b>Logistic Regression</b> with <b>Stratified K-Fold</b> cross-validation and <b>SMOTE</b> within the cross-validation loop (to handle highly imbalanced data)
+    - <b>Logistic Regression</b> with various class imbalance handling techniques like <b>Class Weighting</b>, <b>SMOTE</b>, and <b>Stratified K-Fold cross-validation with SMOTE</b> within the cross-validation loop (to handle highly imbalanced data)
     - <b>Random Forest</b> with <b>Stratified K-Fold</b> cross-validation and <b>SMOTE</b> within the cross-validation loop (to handle highly imbalanced data)
 2. <b>Anomaly Detection</b> – Unsupervised learning using same historical data without the label
    - <b>Isolation Forest</b> with <b>Stratified K-Fold</b> cross-validation and <b>SMOTE</b> within the cross-validation loop (to handle highly imbalanced data)
