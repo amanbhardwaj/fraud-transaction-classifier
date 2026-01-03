@@ -24,9 +24,8 @@ The dataset comes from the [Kaggle dataset repository](https://www.kaggle.com/da
 2. Scaling Features
 3. Split Train and Test data
 4. Feature Engineering
-   - Feature selection using Statistical Data Analysis
    - Converting categorical features into numerical representations using <b>One-Hot Encoding (OHE)</b>
-   - Dimensionality reduction using <b>Principal Component Analysis (PCA)</b>
+   - Scale numeric features using <b>Standard Scaler</b>
 
 <b>C. Modeling & Evaluation</b>
 1. <b>Classification</b> – Supervised learning using labeled historical data
