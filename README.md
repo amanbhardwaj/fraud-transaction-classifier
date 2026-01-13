@@ -30,7 +30,7 @@ The dataset comes from the [Kaggle dataset repository](https://www.kaggle.com/da
 <b>C. Modeling & Evaluation</b>
 1. <b>Classification</b> – Supervised learning using labeled historical data
     - Baseline Model: <b>Logistic Regression</b> with various class imbalance handling techniques like <b>Class Weighting</b>, <b>SMOTE</b>, and <b>Stratified K-Fold cross-validation with SMOTE</b> within the cross-validation loop (to handle highly imbalanced data). <b>Hyperparameter tuning</b> using <b>Grid Search</b>.
-    - Comparison Model: <b>Random Forest</b> with <b>Stratified K-Fold</b> cross-validation and <b>SMOTE</b> within the cross-validation loop (to handle highly imbalanced data)
+    - Comparison Model: <b>Random Forest Classifier</b> with <b>Stratified K-Fold</b> cross-validation and <b>SMOTE</b> within the cross-validation loop (to handle highly imbalanced data)
 2. <b>Anomaly Detection</b> – Unsupervised learning using same historical data without the label
    - <b>Isolation Forest</b> with <b>Stratified K-Fold</b> cross-validation and <b>SMOTE</b> within the cross-validation loop (to handle highly imbalanced data)
 3. <b>Evaluation</b>
@@ -44,13 +44,13 @@ The dataset comes from the [Kaggle dataset repository](https://www.kaggle.com/da
 <img src='images/Logistic_Regression_vs_Random_Forect.png'>
 <mark><b>Random Forest Classifier has significant improvements over the baseline Logistic Regression model.</b></mark>
 
-1. The <mark><b>false positives (the main drawback in our baseline Logistic Regression model) are drastically reduced with Random Forest Classifier</b></mark>. As a result, <mark><b>Precision Score for Fraud class of Random Forest Classifier is 61%</b></mark>, as compared to 2% Precision Score of the Logistic Regression. <mark>Out of the 12,837 transactions classified as fraud by the model in the entire data, 7,855 were actually fraud</mark>.
+1. The <b>false positives (the main drawback in our baseline Logistic Regression model) are drastically reduced with Random Forest Classifier</b>. As a result, <b>Precision Score for Fraud class of Random Forest Classifier is 61%</b>, as compared to 2% Precision Score of the Logistic Regression. Out of the 12,837 transactions classified as fraud by the model in the entire data, 7,855 were actually fraud.
    
-2. The <mark><b>Recall Score for Fraud class of Random Forest Classifier is 96%</b></mark>, that is almost same as compared to 95% Recall Score of the Logistic Regression. <mark>The model correctly classified 7,855 out of 8,213 fraud transactions in the entire data</mark>.
+2. The <b>Recall Score for Fraud class of Random Forest Classifier is 96%</b>, that is almost same as compared to 95% Recall Score of the Logistic Regression. The model correctly classified 7,855 out of 8,213 fraud transactions in the entire data.
 
-3. Primarily due to the improvement in Precision Score, the <mark><b>F1-Score for Fraud class of Random Forest Classifier is 75%</b></mark>, as compared to 4% F1-Score of the Logistic Regression.
+3. Primarily due to the improvement in Precision Score, the <b>F1-Score for Fraud class of Random Forest Classifier is 75%</b>, as compared to 4% F1-Score of the Logistic Regression.
 
-4. The overall <mark><b>Accuracy of Random Forest Classifier is 100%</b></mark>,as compared to 95% Accuracy of the Logistic Regression. <mark>The model correctly classified 6,357,280 out of 6,362,620 total transactions in the entire data</mark>.
+4. The overall <b>Accuracy of Random Forest Classifier is 100%</b>,as compared to 95% Accuracy of the Logistic Regression. The model correctly classified 6,357,280 out of 6,362,620 total transactions in the entire data.
 
 #### Next steps
 The project is still in progress. This section will have suggested next steps when the project reaches completion.
@@ -58,7 +58,7 @@ The project is still in progress. This section will have suggested next steps wh
 #### Outline of project
 
 - [notebook - baseline model (logistic regression)](https://github.com/amanbhardwaj/fraud-transaction-classifier/blob/main/base-classifier.ipynb)
-- [notebook - camparison model (random forest)](https://github.com/amanbhardwaj/fraud-transaction-classifier/blob/main/compare-classifier.ipynb)
+- [notebook - camparison model (random forest classifier)](https://github.com/amanbhardwaj/fraud-transaction-classifier/blob/main/compare-classifier.ipynb)
 - [notebook - anomaly detection model (Isolation forest)]()
 
 
