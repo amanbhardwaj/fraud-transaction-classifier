@@ -41,7 +41,7 @@ The dataset comes from the [Kaggle dataset repository](https://www.kaggle.com/da
       - <b>DBSCAN</b> – Explore how clustering performs in identifying outliers / anomalies 
 
 #### Results
-<img src='images/Logistic_Regression_vs_Random_Forect.png'>
+<img src='images/Logistic_Regression_vs_Random_Forest.png'>
 <mark><b>Random Forest Classifier has significant improvements over the baseline Logistic Regression model.</b></mark>
 
 1. The <b>false positives (the main drawback in our baseline Logistic Regression model) are drastically reduced with Random Forest Classifier</b>. As a result, <b>Precision Score for Fraud class of Random Forest Classifier is 61%</b>, as compared to 2% Precision Score of the Logistic Regression. Out of the 12,837 transactions classified as fraud by the model in the entire data, 7,855 were actually fraud.
