@@ -41,7 +41,16 @@ The dataset comes from the [Kaggle dataset repository](https://www.kaggle.com/da
       - <b>DBSCAN</b> – Explore how clustering performs in identifying outliers / anomalies 
 
 #### Results
-The project is still in progress. This section will have findings from my research when the project reaches completion.
+<img src='images/Logistic_Regression_vs_Random_Forect.png'>
+<mark><b>Random Forest Classifier has significant improvements over the baseline Logistic Regression model.</b></mark>
+
+1. The <mark><b>false positives (the main drawback in our baseline Logistic Regression model) are drastically reduced with Random Forest Classifier</b></mark>. As a result, <mark><b>Precision Score for Fraud class of Random Forest Classifier is 61%</b></mark>, as compared to 2% Precision Score of the Logistic Regression. <mark>Out of the 12,837 transactions classified as fraud by the model in the entire data, 7,855 were actually fraud</mark>.
+   
+2. The <mark><b>Recall Score for Fraud class of Random Forest Classifier is 96%</b></mark>, that is almost same as compared to 95% Recall Score of the Logistic Regression. <mark>The model correctly classified 7,855 out of 8,213 fraud transactions in the entire data</mark>.
+
+3. Primarily due to the improvement in Precision Score, the <mark><b>F1-Score for Fraud class of Random Forest Classifier is 75%</b></mark>, as compared to 4% F1-Score of the Logistic Regression.
+
+4. The overall <mark><b>Accuracy of Random Forest Classifier is 100%</b></mark>,as compared to 95% Accuracy of the Logistic Regression. <mark>The model correctly classified 6,357,280 out of 6,362,620 total transactions in the entire data</mark>.
 
 #### Next steps
 The project is still in progress. This section will have suggested next steps when the project reaches completion.
@@ -49,7 +58,7 @@ The project is still in progress. This section will have suggested next steps wh
 #### Outline of project
 
 - [notebook - baseline model (logistic regression)](https://github.com/amanbhardwaj/fraud-transaction-classifier/blob/main/base-classifier.ipynb)
-- [notebook - camparison model (random forest)]()
+- [notebook - camparison model (random forest)](https://github.com/amanbhardwaj/fraud-transaction-classifier/blob/main/compare-classifier.ipynb)
 - [notebook - anomaly detection model (Isolation forest)]()
 
 
