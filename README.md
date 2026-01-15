@@ -31,14 +31,12 @@ The dataset comes from the [Kaggle dataset repository](https://www.kaggle.com/da
 1. <b>Classification</b> – Supervised learning using labeled historical data
     - Baseline Model: <b>Logistic Regression</b> with various class imbalance handling techniques like <b>Class Weighting</b>, <b>SMOTE</b>, and <b>Stratified K-Fold cross-validation with SMOTE</b> within the cross-validation loop (to handle highly imbalanced data). <b>Hyperparameter tuning</b> using <b>Grid Search</b>.
     - Comparison Model: <b>Random Forest Classifier</b> with <b>Stratified K-Fold</b> cross-validation and <b>SMOTE</b> within the cross-validation loop (to handle highly imbalanced data)
-2. <b>Anomaly Detection</b> – Unsupervised learning using same historical data without the label
-   - <b>Isolation Forest</b> with <b>Stratified K-Fold</b> cross-validation and <b>SMOTE</b> within the cross-validation loop (to handle highly imbalanced data)
+2. <b>Anomaly Detection</b> – Unsupervised learning using same data (without the label)
+   - <b>Isolation Forest</b> with and without <b>SMOTE</b>
+   - <b>Isolation Forest</b> with <b>Stratified K-Fold</b> cross-validation
 3. <b>Evaluation</b>
     - <b>Precision</b>, <b>Recall</b>, <b>F1-Score</b> <i>(Accuracy may be misleading with highly imbalanced data)</i>
-    - <b>Confusion Matrix</b>
-4. <b>Additional Research</b>
-    - <b>Clustering</b> – Unsupervised learning using same historical data without the label
-      - <b>DBSCAN</b> – Explore how clustering performs in identifying outliers / anomalies 
+    - <b>Confusion Matrix</b> 
 
 #### Results
 <img src='images/Logistic_Regression_vs_Random_Forest.png'>
@@ -52,14 +50,21 @@ The dataset comes from the [Kaggle dataset repository](https://www.kaggle.com/da
 
 4. The overall <b>Accuracy of Random Forest Classifier is 100%</b>,as compared to 95% Accuracy of the Logistic Regression. The model correctly classified 6,357,280 out of 6,362,620 total transactions in the entire data.
 
+<mark><b>Isolation Forest performed poorly as compared to Random Forest Classifier and the baseline Logistic Regression model.</b></mark>
+This may be due to reasons such as:
+- Anomalies are clustered
+- Anomalies are local
+- Data dimentionality is not high enough
+
 #### Next steps
-The project is still in progress. This section will have suggested next steps when the project reaches completion.
+- We will use the <mark><b>Ramdom Forest Classifier</b></mark> as it is performing very well.
+- As part of Isolation Forest model development, we need to look deeper into the data for features that highlight the unusual aspects of the data.
 
 #### Outline of project
 
 - [notebook - baseline model (logistic regression)](https://github.com/amanbhardwaj/fraud-transaction-classifier/blob/main/base-classifier.ipynb)
 - [notebook - camparison model (random forest classifier)](https://github.com/amanbhardwaj/fraud-transaction-classifier/blob/main/compare-classifier.ipynb)
-- [notebook - anomaly detection model (Isolation forest)]()
+- [notebook - anomaly detection model (Isolation forest)](https://github.com/amanbhardwaj/fraud-transaction-classifier/blob/main/detect-anomaly.ipynb)
 
 
 ##### Contact and Further Information
