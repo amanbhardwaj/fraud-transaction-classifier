@@ -65,6 +65,3 @@ This may be due to reasons such as:
 - [notebook - baseline model (logistic regression)](https://github.com/amanbhardwaj/fraud-transaction-classifier/blob/main/base-classifier.ipynb)
 - [notebook - camparison model (random forest classifier)](https://github.com/amanbhardwaj/fraud-transaction-classifier/blob/main/compare-classifier.ipynb)
 - [notebook - anomaly detection model (Isolation forest)](https://github.com/amanbhardwaj/fraud-transaction-classifier/blob/main/detect-anomaly.ipynb)
-
-
-##### Contact and Further Information
